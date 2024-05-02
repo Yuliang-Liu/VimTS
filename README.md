@@ -57,6 +57,67 @@ We manually collect and filter text-free, open-source and unrestricted videos fr
 <p>
 <br>
 
+### Getting Started
+
+- ### Installation
+Python 3.8 + PyTorch 1.10.0 + CUDA 11.3 + torchvision=0.11.0 + Detectron2 (v0.2.1) + OpenCV for visualization
+```shell
+conda create -n VimTS python=3.8 -y
+conda activate VimTS
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+pip install -r requirements.txt
+git clone https://github.com/Yuliang-Liu/VimTS.git
+cd detectron2-0.2.1
+python setup.py build develop
+pip install opencv-python
+cd models/vimts/ops
+sh make.sh
+```
+
+### Data Preparation
+
+Please download TotalText, CTW1500, and ICDAR2015 according to the guide provided by SPTS v2: [README.md](https://github.com/bytedance/SPTSv2#dataset).
+
+Extract all the datasets and make sure you organize them as follows
+
+```
+- datasets
+  | - CTW1500
+  |   | - annotations
+  |   | - ctwtest_text_image
+  |   | - ctwtrain_text_image
+  | - totaltext (or icdar2015)
+  |   | - test_images
+  |   | - train_images
+  |   | - test.json
+  |   | - train.json
+```
+
+### Training 
+We use 8 GPUs for training and 2 images each GPU by default.
+
+```
+bash scripts/multi_tasks.sh /path/to/your/dataset
+```
+
+### Evaluation 
+Download the weight [Google Drive]([https://1drv.ms/u/s!AotJrudtBr-K70YeiNolNtP8B6h9?e=bLJdqg](https://drive.google.com/file/d/14ejhHhBJGiA1N55U_0o4__OWFyZ69pBN/view?usp=sharing)).
+
+0 for Text Detection; 1 for Text Spotting.
+```
+bash scripts/test.sh config/VimTS/VimTS_multi_finetune.py /path/to/your/dataset 1 /path/to/your/checkpoint /path/to/your/test_dataset
+```
+e.g.:
+```
+bash scripts/test.sh config/VimTS/VimTS_multi_finetune.py ../datasets 1 cross_domain_checkpoint.pth totaltext_val
+```
+### Visualization 
+Visualize the detection and recognition results
+```
+python vis.py
+```
+
+
 ## Cite
 If you wish to refer to the baseline results published here, please use the following BibTeX entries:
 
