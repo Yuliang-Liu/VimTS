@@ -1,4 +1,4 @@
-python -m torch.distributed.launch --nproc_per_node 8 --use_env main.py  -c config/ESTS/ESTS_5scale_multi_finetune.py --coco_path /data/hmx/video_data/image_data --output_dir logs_cross/croos_domain_prompt_attn_TT_CTW \
+python -m torch.distributed.launch --nproc_per_node 8 --use_env main.py  -c config/VimTS/VimTS_multi_finetune.py --coco_path /data/video_data/image_data --output_dir logs_cross/croos_domain \
         --train_dataset totaltext_train:ctw1500_train \
         --val_dataset totaltext_val \
         --pretrain_model_path checkpoint.pth \
