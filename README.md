@@ -101,6 +101,8 @@ bash scripts/multi_tasks.sh /path/to/your/dataset
 ```
 
 ### Evaluation 
+Download the weight [Google Drive]([https://1drv.ms/u/s!AotJrudtBr-K70YeiNolNtP8B6h9?e=bLJdqg](https://drive.google.com/file/d/14ejhHhBJGiA1N55U_0o4__OWFyZ69pBN/view?usp=sharing)).
+
 0 for Text Detection; 1 for Text Spotting.
 ```
 bash scripts/test.sh config/VimTS/VimTS_multi_finetune.py /path/to/your/dataset 1 /path/to/your/checkpoint /path/to/your/test_dataset
