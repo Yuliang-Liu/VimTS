@@ -1,0 +1,15 @@
+setup.py
+/data/hmx/video_data/TransDETR/ESTextSpotter/models/ests/ops/src/vision.cpp
+/data/hmx/video_data/TransDETR/ESTextSpotter/models/ests/ops/src/cpu/ms_deform_attn_cpu.cpp
+/data/hmx/video_data/TransDETR/ESTextSpotter/models/ests/ops/src/cuda/ms_deform_attn_cuda.cu
+/data/hmx/video_data/TransDETR/VimTS/models/vimts/ops/src/vision.cpp
+/data/hmx/video_data/TransDETR/VimTS/models/vimts/ops/src/cpu/ms_deform_attn_cpu.cpp
+/data/hmx/video_data/TransDETR/VimTS/models/vimts/ops/src/cuda/ms_deform_attn_cuda.cu
+MultiScaleDeformableAttention.egg-info/PKG-INFO
+MultiScaleDeformableAttention.egg-info/SOURCES.txt
+MultiScaleDeformableAttention.egg-info/dependency_links.txt
+MultiScaleDeformableAttention.egg-info/top_level.txt
+functions/__init__.py
+functions/ms_deform_attn_func.py
+modules/__init__.py
+modules/ms_deform_attn.py
