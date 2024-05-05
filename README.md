@@ -24,6 +24,7 @@ VimTS is a unified video and image text spotter for enhancing the cross-domain g
 <p>
 
 ## News 
+* ```2024.5.1 ``` 🚀 Code available.
 * ```2024.5.1 ``` 🚀 Release paper [VimTS](https://arxiv.org/abs/2404.19652).
 
 ## Framework
