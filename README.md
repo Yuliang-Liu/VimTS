@@ -54,11 +54,11 @@ We manually collect and filter text-free, open-source and unrestricted videos fr
 
 <br>
 <p align="center">
-    <img src="https://v1.ax1x.com/2024/05/02/7KiKcw.jpg" width="666"/>
+    <img src="https://v1.ax1x.com/2024/05/06/7KsP3w.png" width="666"/>
 <p>
 <br>
 
-### Getting Started
+## Getting Started
 
 - ### Installation
 Python 3.8 + PyTorch 1.10.0 + CUDA 11.3 + torchvision=0.11.0 + Detectron2 (v0.2.1) + OpenCV for visualization
