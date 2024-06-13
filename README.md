@@ -7,7 +7,6 @@
 
 [![arXiv](https://img.shields.io/badge/Arxiv-2404.19652-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2404.19652)
 [![Project page](https://img.shields.io/badge/Project-Page-white)](https://vimtextspotter.github.io/) 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FYuliang-Liu%2FVimTS&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)
 [![GitHub issues](https://img.shields.io/github/issues/Yuliang-Liu/VimTS?color=critical&label=Issues)](https://github.com/Yuliang-Liu/VimTS/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/Yuliang-Liu/VimTS?color=success&label=Issues)](https://github.com/Yuliang-Liu/VimTS/issues?q=is%3Aissue+is%3Aclosed) <br>
 </h5>
