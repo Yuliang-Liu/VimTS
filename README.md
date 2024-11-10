@@ -78,6 +78,8 @@ sh make.sh
 
 Please download TotalText, CTW1500, and ICDAR2015 according to the guide provided by SPTS v2: [README.md](https://github.com/bytedance/SPTSv2#dataset).
 
+Please download Ground Truth of line-level [TotalText](https://1drv.ms/u/c/030dd3c816e366d8/ERYss1hPOs1MtiNFBbTj5JIB1YSpQpvbctB5Nz859axAxA?e=Gxs2H8) and Ground Truth of word-level [CTW1500](https://1drv.ms/u/c/030dd3c816e366d8/EZq2H7NOCf9BsCnl0HOyeFgBNL0gEZDQ6gfW4deJcT3w5g?e=HDkfrf).
+
 Extract all the datasets and make sure you organize them as follows
 
 ```
@@ -91,6 +93,9 @@ Extract all the datasets and make sure you organize them as follows
   |   | - train_images
   |   | - test.json
   |   | - train.json
+  | - evaluation
+  |   | - gt_ctw1500_word.zip
+  |   | - gt_totaltext_line.zip
 ```
 
 ### Training 
