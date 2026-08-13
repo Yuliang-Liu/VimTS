@@ -1,3 +1,5 @@
+
+
 # VimTS
 
 <h3 align="center"> <a href="https://arxiv.org/abs/2404.19652">VimTS: A Unified Video and Image Text Spotter for Enhancing the Cross-domain Generalization</a></h3>
@@ -68,7 +70,7 @@ conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit
 pip install -r requirements.txt
 git clone https://github.com/Yuliang-Liu/VimTS.git
 cd detectron2-0.2.1
-python setup.py build develop
+python setup.py develop
 pip install opencv-python
 cd models/vimts/ops
 sh make.sh
@@ -76,7 +78,7 @@ sh make.sh
 
 ### Data Preparation
 
-Please download TotalText, CTW1500, and ICDAR2015 according to the guide provided by SPTS v2: [README.md](https://github.com/bytedance/SPTSv2#dataset).
+Please download TotalText, CTW1500, and ICDAR2015 according to the guide provided by SPTS v2: [README.md](https://github.com/bytedance/SPTSv2#dataset).
 
 Please download Ground Truth of line-level [TotalText](https://1drv.ms/u/c/030dd3c816e366d8/ERYss1hPOs1MtiNFBbTj5JIB1YSpQpvbctB5Nz859axAxA?e=Gxs2H8) and Ground Truth of word-level [CTW1500](https://1drv.ms/u/c/030dd3c816e366d8/EZq2H7NOCf9BsCnl0HOyeFgBNL0gEZDQ6gfW4deJcT3w5g?e=HDkfrf).
 
@@ -114,7 +116,7 @@ bash scripts/test.sh config/VimTS/VimTS_multi_finetune.py /path/to/your/dataset 
 ```
 e.g.:
 ```
-bash scripts/test.sh config/VimTS/VimTS_multi_finetune.py ../datasets 1 cross_domain_checkpoint.pth totaltext_val
+bash scripts/test.sh config/VimTS/VimTS_multi_finetune.py ./datasets 1 cross_domain_checkpoint.pth totaltext_val
 ```
 ### Visualization 
 Visualize the detection and recognition results
